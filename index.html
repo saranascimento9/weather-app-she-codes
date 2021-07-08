@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Engine</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="row">
+          <!-- coluna esquerda -->
+
+          <div class="col" id="left">
+            <div class="row">
+              <div class="col d-flex justify-content-center">
+                <h1 class="d-flex">
+                  <span class="temperature" id="current-temp">0</span>
+                  <span class="cversusf"
+                    ><a class="celsiustoggle" id="celsius">ºC </a>|<a
+                      class="celsiustoggle"
+                      id="fahrenheit"
+                      >ºF</a
+                    >
+                  </span>
+                </h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col text-end">
+                <h4 class="currentlow" id="current-low">º</h4>
+              </div>
+              <div class="col text-start">
+                <h4 class="currenthigh" id="current-high">º</h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col text-center">
+                <h3 class="currentcity" id="city">city name</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col text-center">
+                <h4 class="currentweather" id="current-weather">description</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- coluna direita -->
+
+          <div class="col" id="right">
+            <div class="row d-flex justify-content-between">
+              <h5>Tuesday, 16h00</h5>
+            </div>
+            <div class="row">
+              <form class="form" id="city-form">
+                <input
+                  class="cityinput"
+                  type="text"
+                  placeholder="type a city..."
+                  id="user-city"
+                />
+              </form>
+            </div>
+
+            <div class="row d-flex justify-content-between">
+              <div class="row">
+                <div class="col"><p class="forecastday">monday</p></div>
+                <div class="col d-flex justify-content-center">
+                  <p class="forecasticon">🌤</p>
+                </div>
+                <div class="col d-flex justify-content-end">
+                  <p class="prev">12º<span>22º</span></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col"><p class="forecastday">tuesday</p></div>
+                <div class="col d-flex justify-content-center">
+                  <p class="forecasticon">☀️</p>
+                </div>
+                <div class="col d-flex justify-content-end">
+                  <p class="prev">14º<span>25º</span></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col"><p class="forecastday">wednesday</p></div>
+                <div class="col d-flex justify-content-center">
+                  <p class="forecasticon">☁️</p>
+                </div>
+                <div class="col d-flex justify-content-end">
+                  <p class="prev">10º<span>18º</span></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col"><p class="forecastday">thursday</p></div>
+                <div class="col d-flex justify-content-center">
+                  <p class="forecasticon">🌩</p>
+                </div>
+                <div class="col d-flex justify-content-end">
+                  <p class="prev">12º<span>18º</span></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col"><p class="forecastday">friday</p></div>
+                <div class="col d-flex justify-content-center">
+                  <p class="forecasticon">🌥</p>
+                </div>
+                <div class="col d-flex justify-content-end">
+                  <p class="prev">10º<span>21º</span></p>
+                </div>
+              </div>
+
+              <button id="current-location">Current Location</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="opensourcep">
+        <a
+          href="https://github.com/saranascimento9/weather-app-plus"
+          target="blank"
+          el="noopener noreferrer"
+          >Open source code</a
+        >
+        by Sara Nascimento
+      </p>
+    </div>
+
+    <script src="src/javascript.js"></script>
+  </body>
+</html>

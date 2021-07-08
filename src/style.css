@@ -1,0 +1,145 @@
+/* * {
+  outline: 1px dashed tomato;
+  padding: 0;
+}*/
+
+h5 {
+  color: #92b4f4;
+  display: inline;
+}
+
+#current-location {
+  width: 150px;
+  display: inline;
+  font-size: 12px;
+  border-style: none;
+  padding: 5px 10px;
+  background-color: #fff;
+  color: #92b4f4;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #92b4f4;
+  border-width: 1px;
+  /* box-shadow: 0px 1px 4px rgb(180, 180, 180);*/
+  transition: all 300ms ease-in-out;
+}
+
+#current-location:hover {
+  color: #ff7171;
+  font-weight: bold;
+  cursor: pointer;
+  border-style: solid;
+  background-color: #fff;
+  border-color: #fff;
+  border-width: 1px;
+  border-color: #92b4f4;
+  border-radius: 40px;
+}
+
+.container {
+  margin-top: 100px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.card {
+  max-width: 80%;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+#left {
+  margin-right: 0px;
+  padding: 20px 40px 20px 20px;
+  background-color: #d6edff;
+  clip-path: circle(75% at 24% 49%);
+}
+
+#right {
+  padding: 20px;
+  margin: 10px 10px 10px 40px;
+}
+
+.temperature {
+  font-size: 200px;
+  color: #33658a;
+  font-weight: 300;
+}
+
+.celsiustoggle {
+  color: #92b4f4;
+  text-decoration: none;
+}
+
+.cversusf {
+  position: relative;
+  top: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #92b4f4;
+}
+
+.celsiustoggle:hover {
+  cursor: pointer;
+  color: #33658a;
+}
+
+.currentlow {
+  font-size: 20px;
+  font-weight: 600;
+  color: #92b4f4;
+}
+.currenthigh {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ff7171;
+}
+
+.currentcity {
+  color: #33658a;
+  margin: 10px 0;
+}
+
+.currentweather {
+  font-size: 20px;
+  color: #92b4f4;
+}
+.cityinput {
+  float: left;
+  width: 100%;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.forecastday {
+  color: #47597e;
+}
+
+.forecasticon {
+  font-size: 20px;
+}
+
+.prev {
+  color: #86bbd8;
+}
+
+.prev span {
+  color: #ff715b;
+  padding-left: 10px;
+}
+
+.opensourcep {
+  margin-top: 20px;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 600;
+  color: #47597e;
+}
+
+.opensourcep a {
+  color: #ff715b;
+  text-decoration: none;
+  transition: all 500ms ease;
+}
+.opensourcep a:hover {
+  color: #86bbd8;
+}
