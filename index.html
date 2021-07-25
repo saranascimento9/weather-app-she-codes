@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Search Engine</title>
+    <title>Weather App</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
 
@@ -47,8 +47,8 @@
               <div class="col text-center">
                 <h4 class="currentweather" id="current-weather">description</h4>
                 <ul class="weather-details">
-                  <li>Humidity: <span id="humidity"></span>%</li>
-                  <li>Wind: <span id="wind"></span>km/h</li>
+                  <li>Humidity: <span id="humidity"></span> %</li>
+                  <li>Wind: <span id="wind"></span> km/h</li>
                 </ul>
               </div>
             </div>
@@ -71,19 +71,8 @@
               </form>
             </div>
 
-            <div class="row d-flex justify-content-between">
-              <div class="row">
-                <div class="col"><p class="forecastday">monday</p></div>
-                <div class="col d-flex justify-content-center">
-                  <p class="forecasticon">🌤</p>
-                </div>
-                <div class="col d-flex justify-content-end">
-                  <p class="prev">22º<span>12º</span></p>
-                </div>
-              </div>
-
-              <button id="current-location">Current Location</button>
-            </div>
+            <div class="row d-flex justify-content-between" id="forecast"></div>
+            <button id="current-location">Current Location</button>
           </div>
         </div>
       </div>
